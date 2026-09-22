@@ -1,0 +1,13 @@
+id,vendor,plan,category,billing_period,regular_price,intro_price,currency,annual_discount_pct,promo,status,evidence_level,source_url,checked_at
+cursor-pro,Cursor,Pro,ai-coding-subscription,monthly,20,,USD,20,,active,official,https://cursor.com/pricing,2026-09-21
+claude-pro,Anthropic,Claude Pro,general-ai-subscription,monthly,,,USD,,Annual option; regional pricing may apply,active,official,https://support.anthropic.com/en/articles/8325610-how-much-does-claude-pro-cost,2026-09-21
+github-copilot-student,GitHub,Copilot Student,ai-coding-subscription,monthly,0,,USD,,Free for verified students,active,official,https://docs.github.com/en/copilot/get-started/plans,2026-09-21
+google-ai-pro,Google,Google AI Pro,general-ai-subscription,monthly,19.99,,USD,16,Annual billing option,active,official,https://one.google.com/about/plans,2026-09-21
+command-code-go,Command Code,Go,ai-coding-subscription,monthly,1,,USD,,$10 monthly model credits,active,reported,https://api.dreamfree.space/c/s/cpcommandcode,2026-09-21
+opencode-go,OpenCode,Go,ai-coding-subscription,monthly,10,5,USD,,First month $5; $60 monthly model credits,active,official,https://opencode.ai/go,2026-09-21
+freebuff-starter,Freebuff,Starter,ai-coding-subscription,monthly,8,,USD,22,Up to $50 model spend,active,official,https://freebuff.com/plans,2026-09-22
+freebuff-plus,Freebuff,Plus,ai-coding-subscription,monthly,25,,USD,22,Up to $83 model spend,active,official,https://freebuff.com/plans,2026-09-22
+freebuff-pro,Freebuff,Pro,ai-coding-subscription,monthly,60,,USD,22,Up to $132 model spend,active,official,https://freebuff.com/plans,2026-09-22
+cheaper-inference-payg,Cheaper Inference,Pay as you go,ai-api-marketplace,usage,,5,USD,,Fund from $5; first funding adds $10 bonus,active,official,https://www.cheaperinference.com/docs,2026-09-22
+phoenix-grove-taster,Phoenix Grove,Taster,ai-coding-subscription,monthly,3.99,0,USD,,First month free,active,official,https://api.pgsgrove.com/,2026-09-22
+
