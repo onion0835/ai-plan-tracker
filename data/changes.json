@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-22T00:00:00Z",
+  "changes": [
+    {
+      "date": "2026-09-22",
+      "plan_id": "phoenix-grove-taster",
+      "change_type": "added",
+      "fields_changed": ["intro_price", "regular_price", "monthly_tokens_min", "models", "privacy_claim"],
+      "summary": "Phoenix Grove Taster added with a free first month and three Flash models.",
+      "source_url": "https://api.pgsgrove.com/"
+    },
+    {
+      "date": "2026-09-22",
+      "plan_id": "cheaper-inference-payg",
+      "change_type": "added",
+      "fields_changed": ["billing_period", "intro_price", "promo"],
+      "summary": "Cheaper Inference pay-as-you-go pricing and first-funding bonus added.",
+      "source_url": "https://www.cheaperinference.com/docs"
+    },
+    {
+      "date": "2026-09-22",
+      "plan_id": "freebuff-starter",
+      "change_type": "added",
+      "fields_changed": ["regular_price", "annual_discount_pct", "promo"],
+      "summary": "Freebuff Starter, Plus, and Pro plans added with official model-hour allowances.",
+      "source_url": "https://freebuff.com/plans"
+    },
+    {
+      "date": "2026-09-21",
+      "plan_id": "cursor-pro",
+      "change_type": "price_checked",
+      "fields_changed": ["regular_price", "annual_discount_pct"],
+      "summary": "Cursor Pro confirmed at $20 per month with an annual billing discount.",
+      "source_url": "https://cursor.com/pricing"
+    },
+    {
+      "date": "2026-09-21",
+      "plan_id": "github-copilot-student",
+      "change_type": "added",
+      "fields_changed": ["regular_price", "promo"],
+      "summary": "GitHub Copilot Student free eligibility added.",
+      "source_url": "https://docs.github.com/en/copilot/get-started/plans"
+    }
+  ]
+}
+
