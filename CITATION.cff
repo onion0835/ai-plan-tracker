@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: AIPlanWise AI Plan Tracker
+message: "If you use this dataset, please cite AIPlanWise and link to the canonical data page."
+type: dataset
+authors:
+  - name: AIPlanWise
+url: https://aiplanwise.com/data/
+repository-code: https://github.com/onion0835/ai-plan-tracker
+license: CC-BY-4.0
+date-released: 2026-09-22
