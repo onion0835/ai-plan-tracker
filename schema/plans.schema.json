@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiplanwise.com/data/schema/plans.schema.json",
+  "title": "AIPlanWise AI Plan Tracker",
+  "type": "object",
+  "required": ["schema_version", "updated_at", "plans"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "canonical_url": {"type": "string", "format": "uri"},
+    "license": {"type": "string"},
+    "plans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "vendor", "plan", "category", "billing_period", "currency", "status", "evidence_level", "source_url", "checked_at"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "vendor": {"type": "string"},
+          "plan": {"type": "string"},
+          "category": {"type": "string"},
+          "billing_period": {"enum": ["monthly", "annual", "usage", "one-time"]},
+          "regular_price": {"type": ["number", "null"], "minimum": 0},
+          "intro_price": {"type": ["number", "null"], "minimum": 0},
+          "intro_duration_months": {"type": "integer", "minimum": 1},
+          "currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+          "annual_discount_pct": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+          "promo": {"type": ["string", "null"]},
+          "status": {"enum": ["active", "expired", "discontinued", "unverified"]},
+          "evidence_level": {"enum": ["official", "calculated", "reported"]},
+          "source_url": {"type": "string", "format": "uri"},
+          "checked_at": {"type": "string", "format": "date"},
+          "valid_from": {"type": ["string", "null"], "format": "date"},
+          "valid_until": {"type": ["string", "null"], "format": "date"},
+          "notes": {"type": "string"},
+          "models": {"type": "array", "items": {"type": "string"}},
+          "monthly_tokens_min": {"type": "integer", "minimum": 0},
+          "privacy_claim": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}
+
