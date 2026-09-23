@@ -121,16 +121,18 @@ def main() -> int:
         except Exception as exc:
             errors.append(str(exc))
             print(f"ERROR {plan['plan_id']}: {exc}", file=sys.stderr)
-    if errors:
-        print("No observations saved: all sources must parse successfully.", file=sys.stderr)
+    if not observations:
+        print("No observations saved: no source parsed successfully.", file=sys.stderr)
         return 1
     if args.dry_run:
         return 0
     HISTORY.mkdir(parents=True, exist_ok=True)
     destination = HISTORY / f"{now.date().isoformat()}.json"
-    payload = {"observed_on": now.date().isoformat(), "observations": observations}
+    payload = {"observed_on": now.date().isoformat(), "observations": observations, "failures": errors}
     destination.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Saved {destination.relative_to(ROOT)}")
+    for error in errors:
+        print(f"::warning::{error}")
     return 0
 
 
