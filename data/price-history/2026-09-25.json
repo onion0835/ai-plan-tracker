@@ -1,0 +1,46 @@
+{
+  "observed_on": "2026-09-25",
+  "observations": [
+    {
+      "plan_id": "cursor-pro",
+      "monthly_price": 20.0,
+      "currency": "USD",
+      "market": "US / public English page",
+      "source_url": "https://cursor.com/pricing",
+      "fetched_at": "2026-09-25T10:19:23Z",
+      "evidence_excerpt": "ent requests ✓ Access to Composer Try Cursor Individual For the agent-curious $20 / mo. Pro Pro+ Ultra Everything in Hobby, plus: ✓ Exte",
+      "review_status": "unreviewed"
+    },
+    {
+      "plan_id": "claude-pro",
+      "monthly_price": 20.0,
+      "currency": "USD",
+      "market": "US / public English page",
+      "source_url": "https://claude.com/pricing",
+      "fetched_at": "2026-09-25T10:19:23Z",
+      "evidence_excerpt": "Connect your apps and tools Create Artifacts Pro For everyday work $17 Per month with annual subscription discount ( $200 billed up front). $20 if billed monthly. Try Claude Everything in Free, plus: More u",
+      "review_status": "unreviewed"
+    },
+    {
+      "plan_id": "github-copilot-student",
+      "monthly_price": 0.0,
+      "currency": "USD",
+      "market": "US / public English page",
+      "source_url": "https://docs.github.com/en/copilot/get-started/plans",
+      "fetched_at": "2026-09-25T10:19:23Z",
+      "evidence_excerpt": "AI Credits Limited Auto model selection only Copilot Student Free An allowance of GitHub AI Credits Excludes t",
+      "review_status": "unreviewed"
+    },
+    {
+      "plan_id": "google-ai-pro",
+      "monthly_price": 19.99,
+      "currency": "USD",
+      "market": "US / public English page",
+      "source_url": "https://one.google.com/about/plans",
+      "fetched_at": "2026-09-25T10:19:23Z",
+      "evidence_excerpt": "ore access check More benefits across Google Google AI Pro (5 TB) $19.99/mo Get started Share storage with up to 5 other",
+      "review_status": "unreviewed"
+    }
+  ],
+  "failures": []
+}
